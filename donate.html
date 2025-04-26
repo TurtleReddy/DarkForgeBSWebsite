@@ -14,6 +14,11 @@
 		  </a>
 		  <h3>Dark Forge Brawl Stars </h3>
 		  <img src="brawlstarslogo.png" width="400" class="headimg">
+		  <div class="hamburger">
+			<div></div>
+			<div></div>
+			<div></div>
+		  </div>
 		  <ul>
 			<button class="btn"><a href="index.html">Home</a></button>
 			<button class="btn"><a href="donate.html">Donate</a></button>
@@ -31,5 +36,13 @@
 			  }).render("#paypal-container-RYZQXLB933M84")
 			</script>
         </div>
+		<script>
+			const hamburger = document.querySelector('.hamburger');
+			const navLinks = document.querySelector('.navdiv ul');
+
+			hamburger.addEventListener('click', () => {
+			  navLinks.classList.toggle('active');
+			});
+		</script>
     </body>
 </header>
