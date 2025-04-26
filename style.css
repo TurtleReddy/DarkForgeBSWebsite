@@ -132,3 +132,69 @@ text-align:center;
   transform: translateY(100%);
   display: inline-block;
 }
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navdiv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headimg {
+    width: 100px;
+  }
+
+  .hometxt, .abttxt {
+    font-size: 20px;
+  }
+
+  #text, #paypal-container-RYZQXLB933M84 {
+    width: 90%;
+    padding: 0.5em 1em;
+  }
+
+  button {
+    padding: 10px;
+    width: 100px;
+  }
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navdiv ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navdiv ul.active {
+    display: flex;
+  }
+
+  .navdiv ul li {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+}
